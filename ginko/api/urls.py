@@ -3,5 +3,6 @@ from . import views
 from .views import *
 
 urlpatterns = [
-    path('action', views.get_action)
+    path('action/', get_action),
+    path('action/<int:pk>/', get_action_detail)
 ]
